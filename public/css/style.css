@@ -52,8 +52,11 @@ body {
   height: 100%;
 }
 body, html{
-font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
+
+
+
 /*
  * Banner styling
  */
@@ -69,7 +72,7 @@ font-family: 'Raleway', sans-serif;
   height: 100%;
 
 
-  animation: fadeInBg 1.5s;
+  animation: fadeInBg 3.5s;
 }
 
 #bannerTitle {
@@ -84,6 +87,16 @@ font-family: 'Raleway', sans-serif;
   width: 100%;
   text-align: center;
   color: #000;
+}
+
+.caption-title {
+  background-color: rgba(47,79,79, 1);
+  font-size: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
 }
 
 /*
@@ -367,6 +380,6 @@ div.img-opacity:hover{
   line-height: 200%;
 }
 
-.blog-body p{
+.blog-body p, .blog-body h4{
     margin-bottom: 20px;
 }
