@@ -1,0 +1,38 @@
+<?php
+
+	class Session{
+		var $inactivity = 600;
+		
+		//Constructor
+		function Session(){
+			$this->startSession();
+		}
+		
+		//Start the session and determine state
+		function startSession(){
+			
+			session_start();
+			
+			if(isset($_SESSION['userName'])){
+				$this->checkActivity();
+			}
+		}
+		
+		//Check activity
+		function checkActivity(){
+			$sessionTTL = time() - $_SESSION['time'];
+			if($sessionTTL > $this->$inactivity){
+				session_destroy();
+				return false;
+			} else{
+				$_SESSION['time'] = time();
+				return true;
+			}
+		}
+		
+		
+	};
+	
+	$session = new Session();
+
+?>

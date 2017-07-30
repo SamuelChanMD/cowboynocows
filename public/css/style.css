@@ -1,0 +1,372 @@
+/*
+ * Works with Dan Eden's CSS library
+ * For banner
+ */
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.65;
+  }
+}
+
+.fadeInBg {
+  animation-name: fadeIn;
+}
+
+
+/*
+ * Custom contain
+ */
+ 
+div.custom-contain  {
+  padding-top: 50px;
+	padding-bottom: 50px;
+} 
+
+
+/*
+ * Messages
+ */
+
+div.message{
+  margin-top: 30px;
+}
+
+
+/*
+ * For footer
+ */
+ 
+html {
+  height: 100%;
+  /*position: relative;
+  /*min-height: 100%;*/
+}
+body { 
+  /* Margin bottom by footer height */
+  margin-bottom: 120px;  
+  height: 100%;
+}
+body, html{
+font-family: 'Raleway', sans-serif;
+}
+/*
+ * Banner styling
+ */
+#bannerImage {
+  position: relative;
+  opacity: 0.65 !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* The image used */
+
+  height: 100%;
+
+
+  animation: fadeInBg 1.5s;
+}
+
+#bannerTitle {
+  font-size: 48px;
+  color: white;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+/*
+ * Similar to banner NOT BEING USED
+ */
+#randomImage {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* The image used */
+  //height: 100%;
+  height: 400px;
+}
+
+#randomTitle {
+  font-size: 38px;
+  color: white;
+  opacity: 0.65;
+}
+
+.img-opacity:hover #randomTitle{
+  display: none;
+}
+
+/*
+ * Footer
+ */
+.footer {
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 120px;
+  background-color: #f5f5f5;
+}
+
+
+/*
+ * Font CSS
+ */
+p {
+  font-size: 16px;
+}
+
+.text-white{
+  color: white !important;
+}
+
+
+/*
+ * Image CSS
+ */
+
+div.img-opacity {
+  opacity: 1;
+
+}
+
+div.img-opacity:hover{
+  opacity: 0.65;
+}
+
+.belowImg{
+  width: 100%;
+  float:left;  
+  background-color: #e74c3c;
+  padding: 0px 5px 5px 5px;
+  color: white;
+}
+
+
+
+/*
+ * Margins
+ */
+
+.mrgn-bttm-sm{
+  margin-bottom: 10px;
+}
+
+.mrgn-bttm-md{
+  margin-bottom: 20px;
+}
+
+.mrgn-bttm-lg{
+  margin-bottom: 40px;
+}
+
+.mrgn-tp-sm{
+  margin-top: 10px;
+}
+
+.mrgn-tp-md{
+  margin-top: 20px;
+}
+
+.mrgn-tp-lg{
+  margin-top: 40px;
+}
+
+
+
+.glyphicon.glyphicon-lg {
+    font-size: 75px;
+}
+
+
+
+/*
+ * Equal Height
+ */
+
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+
+
+/*
+ * Home
+ */
+.sharp-edges {
+  border-radius: 0px;
+}
+
+/*
+.list-group a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.list-group a:hover{
+  color: white;
+  text-decoration: underline;
+}; */
+
+
+
+/*
+ * About me 
+ */
+
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  //transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  animation: slideInLeft 0.75s;
+}
+
+
+
+/*
+ * Navigation
+ * Copied from Samuel Marchal. https://work.smarchal.com!
+ */
+
+.navbar-default {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #e74c3c;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ffbbbc;
+  background-color: #c0392b;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+  background-color: #c0392b;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ffbbbc;
+  background-color: #c0392b;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+  background-color: #c0392b;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffbbbc;
+  background-color: #c0392b;
+}
+.navbar-default .navbar-toggle {
+  border-color: #c0392b;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #c0392b;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffbbbc;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #c0392b;
+  }
+}
+
+
+/*
+ * Blogs and Posts
+ */
+.blog-body{
+  line-height: 200%;
+}
+
+.blog-body p{
+    margin-bottom: 20px;
+}
