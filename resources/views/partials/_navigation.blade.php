@@ -40,7 +40,7 @@
            @elseif (Auth::guard('admin')->check())
             <li>
             	<a href=''>Admin: {{Auth::guard('admin')->user()->name}}
-            	<span class='glyphicon glyphicon-user'></span>
+            	<span class='glyphicon glyphicon-user'></span></a>
             </li>
 			<li>		
 			    <a href="{{ url('/admin_logout') }}" onclick="event.preventDefault();
@@ -69,7 +69,7 @@
  <div id='bannerImage' 
  	style='background-image: url("{!! ( isset($img_banner) ? asset($img_banner) : asset('images/home.jpg')) !!}");'>
  	<div class='caption'>
- 		<h1 id='bannerTitle'>@yield('title')</h1>
+ 		<span class='caption-title'>@yield('title')</span>
  	</div>
  </div>
 

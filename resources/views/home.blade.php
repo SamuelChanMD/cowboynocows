@@ -55,37 +55,7 @@
 						</div>
 					</div>
 				</div>
-<!--
-					<div class='panel panel-default'>
-						<div class='panel-heading'>
-							<h4 class='text-center'>First Featured Post</h4>
-						</div>
-					
-						<a href='{{route('blog.single', $posts[0]->slug)}}'>
-						<div id='randomImage' class='img-opacity'
-						 	style='background-image: url("{!! asset('images/' . $posts[0]->image_url) !!}");'>
-						 	<div class='caption'>
-						 		<h4 id='randomTitle'>{!! $posts[0]->title !!}</h4>
-						 	</div>
-						 </div>
-						</a>	
-					</div>	
-					<div class='panel panel-default'>
-						<div class='panel-heading'>
-							<h4 class='text-center'>Second Featured Post</h4>
-						</div>
-					
-						<a href='{{route('blog.single', $posts[1]->slug)}}'>
-						<div id='randomImage' class='img-opacity'
-						 	style='background-image: url("{!! asset('images/' . $posts[1]->image_url) !!}");'>
-						 	<div class='caption'>
-						 		<h4 id='randomTitle'>{!! $posts[1]->title !!}</h4>
-						 	</div>
-						 </div>
-						</a>	
-					</div>
-				</div>
--->				
+				
 				<div id='randomFacts' class='col-md-4'>
 					<div class='panel panel-info sharp-edges'>
 						<div class='panel-heading'>
