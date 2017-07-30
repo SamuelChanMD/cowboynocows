@@ -26,7 +26,7 @@
 	<div id='threec' class='custom-contain'>
 		<div class='container'>
 			<h2 class='text-center'>The Three <strong>C's</strong> of Me!</h2>
-			<div class='row match-my-cols text-white'>
+			<div class='row match-my-cols text-white mrgn-bttm-md'>
 				<div class='text-center'>
 				<div class='col-sm-6 col-lg-4'>
 				<div class='img__wrap'>
@@ -69,6 +69,11 @@
 				</div>
 				</div>	
 				</div>			
+			</div>
+			<div class='text-center'>
+				<a href='{{route('blog.single', 'first-c-of-me')}}' class='btn btn-primary' role='button'>
+					Read more
+				</a>
 			</div>
 		</div>
 	</div>
