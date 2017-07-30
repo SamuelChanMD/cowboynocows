@@ -7,9 +7,18 @@
 	<div class='custom-contain'>
 		<div class='container'>
 			<div class='row'>
-				<div class='col-md-10 col-md-offset-2 mrgn-bttm-lg'>
+				<div class='col-md-10 col-md-offset-2 mrgn-bttm-md'>
 					<h1>{{$post->title}} <span class='badge'>{{$post->created_at}}</span></h1>
 				</div>
+				<div class='col-md-10 col-md-offset-2 mrgn-bttm-md'>
+					<div class="fb-share-button" data-href="{{Request::url()}}" 
+						data-layout="button" data-size="large" data-mobile-iframe="true">
+						<a class="fb-xfbml-parse-ignore" target="_blank" 
+							href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flocalhost%2Fblog%2F&amp;src=sdkpreparse">
+							Share
+						</a>
+					</div>
+				</div>				
 				<div class='col-md-8 col-md-offset-2 blog-body'>
 					{!! html_entity_decode($post->body) !!}
 				</div>
