@@ -99,29 +99,7 @@ body, html{
   color: white;
 }
 
-/*
- * Similar to banner NOT BEING USED
- */
-#randomImage {
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
-  /* The image used */
-  //height: 100%;
-  height: 400px;
-}
-
-#randomTitle {
-  font-size: 38px;
-  color: white;
-  opacity: 0.65;
-}
-
-.img-opacity:hover #randomTitle{
-  display: none;
-}
 
 /*
  * Footer

@@ -12,10 +12,10 @@
 				</div>					
 				<div class='col-md-9'>
 					<h1>About Me</h1>
-					<p class='lead'>Samuel Chan is just your "average" young adult trying to make it through
-						the complicated process called "life". He's got great family and friends who have
-						all helped him along the way, one way or another, in defining who he is today. 
-						His greatest and longest running accomplishment is staying alive for twenty two years.
+					<p class='lead'>I am your "average" young adult trying to make it through
+						the complicated process called "life". I got great family and friends who have
+						all helped me along the way, one way or another, in defining who I am today. 
+						My greatest and longest running accomplishment is staying alive for twenty two years.
 					</p>
 				</div>			
 			</div>

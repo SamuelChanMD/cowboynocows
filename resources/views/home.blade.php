@@ -22,6 +22,8 @@
 	</div>
 	<!--End of Welcome-->
 
+	<hr></hr>
+
 	<!--Random Post-->
 	<div id='featuredPost' class='custom-contain'>
 		<div class='container-fluid'>
@@ -55,7 +57,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div id='randomFacts' class='col-md-4'>
 					<div class='panel panel-info sharp-edges'>
 						<div class='panel-heading'>
@@ -83,7 +85,7 @@
 	<div id='featuredPost' class='custom-contain'>
 		<div class='container-fluid'>
 			<h2 class='text-center'>Special Thanks</h2>
-			<div class='row'>
+			<div class='row match-my-cols'>
 				<div class='col-md-4'>
 					<div class='panel panel-default sharp-edges'>
 						<div class='panel-heading'>
@@ -100,7 +102,7 @@
 						</div>
 					</div>
 				</div>
-				<div class='col-md-4'>
+				<div class='col-md-4' >
 					<div class='panel panel-default sharp-edges'>
 						<div class='panel-heading'>
 							<h4>Lynda J Chan Photography</h4>
@@ -113,7 +115,7 @@
 								camera everywhere.
 
 								Many of the pictures I use in this blog are hers! So if you like them, 
-								then check out her <a href='http://www.lyndajchan.com'>website!</a></p>
+								then check out her <a href='http://www.lyndajchan.com' target='_blank'>website!</a></p>
 						</div>
 					</div>
 				</div>				
@@ -128,7 +130,7 @@
 							<p>The best front-end developer and web designer I know. He helped me decide what
 								tools to use for this project and with the deployment of
 								this website.</p>
-							<p>Check out his own website <a href='http://www.paulloh.com'>here!</a></p>
+							<p>Check out his own website <a href='http://www.paulloh.com' target='_blank'>here!</a></p>
 							<p>P.S. I took this picture.</p>
 						</div>
 					</div>
@@ -147,7 +149,7 @@
 								web development. He has uploaded several dozen tutorials, many of which
 								I have watched and learned from. If you want to create your own website,
 								then I recommend checking out his
-								<a href='https://www.youtube.com/channel/UC6kwT7-jjZHHF1s7vCfg2CA'>
+								<a href='https://www.youtube.com/channel/UC6kwT7-jjZHHF1s7vCfg2CA' target="_blank">
 								youtube channel!</a></p>
 						</div>
 					</div>
