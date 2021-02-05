@@ -33,7 +33,7 @@
 					<img src='{!! asset('/images/three_c/code.jpeg') !!}' 
 						alt='Computer Science' class='img-responsive'/>
 					<div class='img__description' style='background-color: rgba(102, 102, 255, 0.8)'>	
-					<h3>Computer Scientist</h3>
+					<h3>Computer Scientist (undergrad)</h3>
 					<p>As a computer scientist, I love problem solving. From brain teasers and puzzles to
 						practical everyday problems, such as figuring out the fastest route to work or
 						minimising packing space in my backpack, I enjoy problem solving. The field
@@ -46,7 +46,7 @@
 					<img src='{!! asset('/images/three_c/fence.jpg') !!}' 
 						alt='Fence' class='img-responsive'/>	
 					<div class='img__description' style='background-color: rgba(102, 187, 102, 0.8)'>
-					<h3>Criminologist</h3>
+					<h3>Criminologist (undergrad)</h3>
 					<p>People are interesting. Society is interesting. The social space, is a very complex 
 						and dynamic realm of its own. While the computer scientist side of me likes to 
 						understand the world we live in, the criminologist side

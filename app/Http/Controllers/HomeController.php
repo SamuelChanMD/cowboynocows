@@ -30,7 +30,11 @@ class HomeController extends Controller
         //Fetch all posts and display one of them
         //$posts = Post::all();
         $posts = Post::orderBy('created_at', 'desc')->take(2)->get();
-        $random = mt_rand(0, count($posts)-1);
+        $maxPosts = 0;
+        if (count($posts) > 0) {
+            $maxPosts = count($posts)-1;
+        }
+        $random = mt_rand(0, $maxPosts);
 
         //Fetch all facts and display three of them
         $facts = Fact::all();
@@ -38,7 +42,11 @@ class HomeController extends Controller
         $i = 0;
         $used = [];
         while($i < 3){
-            $randomNum = mt_rand(0, count($facts)-1);
+            $maxFacts = 0;
+            if (count($facts) > 0) {
+                $maxFacts = count($facts)-1;
+            }
+            $randomNum = mt_rand(0, $maxFacts);
             
             if(in_array($randomNum, $used)){
                 continue;

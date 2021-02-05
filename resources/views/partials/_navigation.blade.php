@@ -18,7 +18,7 @@
 			<li class="{{Request::is('facts') ? "active" : ""}}"><a href={{route('facts.index')}}>Facts</a><li>
 		  	@endif
 		  	<li><a id='resume' href='{{route('download', 'SamuelResume.pdf')}}'>
-		  		Download Resume <span class='glyphicon glyphicon-download-alt'></span>
+		  		Download Resume (outdated) <span class='glyphicon glyphicon-download-alt'></span>
 		  	</a></li>
 		  </ul>
 		  

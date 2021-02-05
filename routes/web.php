@@ -13,8 +13,8 @@
 
 Route::get('/download/{f}', 'DownloadController@download')->name('download');
 
-Route::get('/blog/{slug}', 'BlogController@getSingle')->name('blog.single')
-		->where('slug', '[\w\d-\_]+');
+Route::get('/blog/{slug}', 'BlogController@getSingle')->name('blog.single');
+		// ->where('slug', '[\w\d-\_]+'); should fix this sometime but its good for now
 
 Route::get('/blog', 'BlogController@getIndex')->name('blog.index');		
 

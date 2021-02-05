@@ -1,5 +1,28 @@
 <?php
 
+$hostname = env('DB_HOST', '127.0.0.1');
+$username = env('DB_USERNAME', 'forge');
+$password = env('DB_PASSWORD', '');
+$dbname = env('DB_DATABASE', 'FORGE');
+
+if (array_key_exists('RDS_HOSTNAME', $_SERVER)) {
+    $hostname = $_SERVER['RDS_HOSTNAME'];
+}
+if (array_key_exists('RDS_USERNAME', $_SERVER)) {
+    $username = $_SERVER['RDS_USERNAME'];
+}
+if (array_key_exists('RDS_PASSWORD', $_SERVER)) {
+    $password = $_SERVER['RDS_PASSWORD'];
+}
+if (array_key_exists('RDS_DB_NAME', $_SERVER)) {
+    $dbname = $_SERVER['RDS_DB_NAME'];
+}
+
+define('RDS_HOSTNAME', $hostname);
+define('RDS_USERNAME', $username);
+define('RDS_PASSWORD', $password);
+define('RDS_DB_NAME', $dbname);
+
 return [
 
     /*
@@ -41,11 +64,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => RDS_HOSTNAME,
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => RDS_DB_NAME,
+            'username' => RDS_USERNAME,
+            'password' => RDS_PASSWORD,
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
